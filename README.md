@@ -55,10 +55,14 @@ L’obiettivo è coniugare **coerenza logica** (classical planning) e **creativi
 
 ## 🏗️ Architettura a due fasi
 
-### 🧪 Fase 1 – Story Generation
+> ✨ Fase 1: generazione della storia in formato PDDL  
+> 🕹️ Fase 2: creazione di un web-game giocabile
+
+---
+
+## 🚀 Diagramma del flusso
 
 ```mermaid
-
 graph TD
     A[Lore Document] --> B[LLM Prompt]
     B --> C{Genera PDDL}
@@ -66,10 +70,8 @@ graph TD
     D -->|✓| E[Storia valida]
     D -->|✗| F[Reflection Agent]
     F --> C
-
-
-graph TD
-    G[domain/problem PDDL] --> H[LLM Prompt (fase 2)]
+    C --> G[domain/problem PDDL]
+    G --> H[LLM Prompt (fase 2)]
     H --> I[HTML Generator]
     I --> J[index.html (+ assets)]
     J --> K[Player]
