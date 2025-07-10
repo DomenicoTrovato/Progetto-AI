@@ -71,7 +71,7 @@ graph TD
     D -->|✗| F[Reflection Agent]
     F --> C
     C --> G[domain/problem PDDL]
-    G --> H[LLM Prompt (fase 2)]
+    G --> H[LLM Prompt]
     H --> I[HTML Generator]
     I --> J[index.html (+ assets)]
     J --> K[Player]
