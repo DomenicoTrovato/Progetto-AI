@@ -93,7 +93,7 @@ QuestMaster/
 │   └── llama3_8b.gguf
 ├── requirements.txt
 └── README.md
-```
+
 Requisiti
 Categoria	Versione consigliata
 Python	≥ 3.10
