@@ -29,7 +29,7 @@ Now, using the following fantasy lore document, generate the PDDL domain and pro
 """
 
 # Chiedi al modello di generare il PDDL
-print("Generating PDDL from Lore...\n")
+print("Generazione PDDL...\n")
 response = llm.invoke(prompt)
 
 # Salva il risultato in un file .pddl
