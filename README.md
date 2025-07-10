@@ -57,6 +57,7 @@ L’obiettivo è coniugare **coerenza logica** (classical planning) e **creativi
 
 ### 🧪 Fase 1 – Story Generation
 
+```mermaid
 
 graph TD
     A[Lore Document] --> B[LLM Prompt]
@@ -67,6 +68,8 @@ graph TD
     F --> C
 
 Fase 2 – Interactive Game
+```mermaid
+
 graph TD
     G[domain/problem PDDL] --> H[LLM Prompt (fase 2)]
     H --> I[HTML Generator]
