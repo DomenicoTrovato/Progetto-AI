@@ -8,22 +8,25 @@ with open("C:/Users/domen/OneDrive/Desktop/The Amulet of Light – Lore Document
     lore_text = f.read()
 
 # Prompt da inviare al modello
-prompt = f"""
-This is a fantasy planning problem.
+prompt = f"""\ 
+You are an expert AI Planning system and PDDL domain generator. 
+Your task is to read a fantasy lore document describing a world, and **generate a complete PDDL domain and problem** that represent the scenario as a planning problem.
 
-Below is a Lore Document. Please generate a fully working and syntactically valid PDDL domain and problem definition, suitable for a classical planner like Fast Downward.
+**Requirements and format:**
+- Provide a full PDDL domain and problem definition that can be solved by a planner (e.g. Fast Downward) with no syntax errors.
+- The output **must** include both:
+  1. A `(define (domain ...))` section with a domain name, a `:predicates` list, and several `:action` definitions. Each action should have parameters, clear preconditions, and effects reflecting the lore.
+  2. A `(define (problem ...))` section with the same domain name, a list of `:objects` present in the lore, an `:init` state using the predicates to describe the initial world state, and a `:goal` condition that is achievable via the actions.
+- Use consistent naming: all names (domain, predicates, actions, objects) in lowercase and using underscores `_` instead of spaces. Use descriptive names related to the fantasy lore (e.g., `has_sword`, `open_portal`, `slay_dragon`) and avoid generic names.
+- **Ensure the domain name is identical in both the domain and problem definitions.**
+- The `:init` facts should be consistent with the lore description, and the `:goal` should be a logical outcome or quest from the lore that can be achieved with the available actions.
+- **Do not explain or write anything outside the PDDL code.** Only output the valid PDDL code for the domain and problem, with no additional commentary.
 
-You must include:
-1. Full :domain definition (with :predicates and :action sections)
-2. A separate :problem block with :init and :goal
-3. All actions must include :precondition and :effect using correct PDDL syntax
-4. Use lowercase and underscores in names
-5. The plan must be solvable (at least one valid path to the goal)
+Now, using the following fantasy lore document, generate the PDDL domain and problem:
 
-Lore:
+\"\"\" 
 {lore_text}
 """
-
 
 # Chiedi al modello di generare il PDDL
 print("Generating PDDL from Lore...\n")
