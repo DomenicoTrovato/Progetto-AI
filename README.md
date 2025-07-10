@@ -57,7 +57,7 @@ L’obiettivo è coniugare **coerenza logica** (classical planning) e **creativi
 
 ### 🧪 Fase 1 – Story Generation
 
-```mermaid
+
 graph TD
     A[Lore Document] --> B[LLM Prompt]
     B --> C{Genera PDDL}
