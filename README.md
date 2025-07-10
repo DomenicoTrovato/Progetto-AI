@@ -67,8 +67,8 @@ graph TD
     A[Lore Document] --> B[LLM Prompt]
     B --> C{Genera PDDL}
     C -->|domain & problem| D[Fast Downward]
-    D -->|✓| E[Storia valida]
-    D -->|✗| F[Reflection Agent]
+    D --> E[Storia valida]
+    D --> F[Reflection Agent]
     F --> C
     C --> G[domain/problem PDDL]
     G --> H[LLM Prompt (fase 2)]
