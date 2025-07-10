@@ -73,7 +73,7 @@ graph TD
     C --> G[domain/problem PDDL]
     G --> H[LLM Prompt]
     H --> I[HTML Generator]
-    I --> J[index.html (+ assets)]
+    I --> J[index.html]
     J --> K[Player]
 
 Struttura del progetto
