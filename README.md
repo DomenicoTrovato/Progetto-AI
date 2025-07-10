@@ -75,7 +75,7 @@ graph TD
     H --> I[HTML Generator]
     I --> J[index.html (+ assets)]
     J --> K[Player]
-
+```
 Struttura del progetto
 QuestMaster/
 ├── phase1/
