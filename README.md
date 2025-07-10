@@ -93,7 +93,7 @@ QuestMaster/
 │   └── llama3_8b.gguf
 ├── requirements.txt
 └── README.md
-
+```
 Requisiti
 Categoria	Versione consigliata
 Python	≥ 3.10
@@ -104,7 +104,6 @@ FAISS (opzionale)	≥ 1.7
 Browser moderno	Chrome / Firefox / Edge
 
 
-```
 Installazione rapida
 # 1. Clona il repo
 git clone https://github.com/<tuo-utente>/QuestMaster.git
