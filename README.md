@@ -66,7 +66,7 @@ graph TD
     D -->|✗| F[Reflection Agent]
     F --> C
 
- Fase 2 – Interactive Game
+Fase 2 – Interactive Game
 graph TD
     G[domain/problem PDDL] --> H[LLM Prompt (fase 2)]
     H --> I[HTML Generator]
