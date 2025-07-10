@@ -62,7 +62,7 @@ L’obiettivo è coniugare **coerenza logica** (classical planning) e **creativi
 
 ## 🚀 Diagramma del flusso
 
-mermaid
+```mermaid
 graph TD
     A[Lore Document] --> B[LLM Prompt]
     B --> C{Genera PDDL}
@@ -104,7 +104,7 @@ FAISS (opzionale)	≥ 1.7
 Browser moderno	Chrome / Firefox / Edge
 
 
-
+```
 Installazione rapida
 # 1. Clona il repo
 git clone https://github.com/<tuo-utente>/QuestMaster.git
