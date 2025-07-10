@@ -67,8 +67,6 @@ graph TD
     D -->|✗| F[Reflection Agent]
     F --> C
 
-Fase 2 – Interactive Game
-```mermaid
 
 graph TD
     G[domain/problem PDDL] --> H[LLM Prompt (fase 2)]
