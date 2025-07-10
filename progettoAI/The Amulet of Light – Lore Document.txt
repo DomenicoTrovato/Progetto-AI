@@ -1,0 +1,45 @@
+The Amulet of Light – Lore Document
+Quest Description
+In the Kingdom of Eldoria, a lone hero is tasked with recovering the Amulet of Light, a sacred
+relic stolen by an evil sorcerer. The adventure focuses on the exploration of wild lands and
+combat against hostile creatures. The narrative path is not completely linear: the protagonist
+will have to make choices along the way (alternate routes, battles to fight or avoid, puzzles
+to solve), always maintaining clear causal coherence between actions and consequences.
+Initial State:
+The hero starts from the village of Oakstead, on the edge of the kingdom, informed of the
+mission by a wise old man of the village. Initially, he carries basic travel equipment (a
+trusted sword, a worn shield, and some provisions) and only knows the general direction in
+which the thief of the Amulet has fled. The world around him is on high alert: the unrest
+caused by the artifact’s theft is tangible, and there are rumors of malevolent creatures
+sighted nearby.
+Final Goal:
+Reach the Tower of Malakar in the remote mountains and reclaim the Amulet of Light from the
+evil sorcerer Malakar (the necromancer who stole it). This may involve defeating Malakar in a
+final battle inside his stronghold, or managing to steal the artifact through cunning. Success
+will restore order to the kingdom (the Amulet holds a protective magic over Eldoria) and
+fulfill the hero’s destined path.
+Obstacles:
+Along the journey, the hero encounters both physical and logical obstacles. There are enemies
+(e.g., bandits along the Old King’s Road, wild creatures in the Dark Forest, and goblin minions
+of Malakar patrolling the area), puzzles (such as an ancient riddle engraved on a magical
+monolith blocking a secret forest passage, or a sequence of levers that must be activated in
+the correct order to open the tower door), and physical blocks (a stone door sealed by a runic
+key, a collapsed bridge requiring a detour).
+Each obstacle requires a causal and logical solution: for example, the sealed tower door can
+only be opened using the Twilight Key previously recovered in the forest; similarly, a troll
+guarding the broken bridge can be confronted in combat or bypassed by seeking a ford upstream.
+These challenges not only make the journey more demanding but also ensure that every action
+taken by the hero (fighting, exploring, using an item) has a precise purpose and direct
+consequences within the game world.
+Setting:
+The mission takes place in a classic medieval fantasy environment. The Kingdom of Eldoria
+features wide forests, fortified villages, and ancient ruins. The geography offers multiple
+paths: for example, to reach the mountains, the protagonist can cross the Dark Forest (an
+ancient, eerie wood haunted by wolves and lost magic) or follow the Ridge Path along the
+hilltops (a more direct route but guarded by brigands in Malakar’s service).
+Magical elements permeate the setting: glowing runes protect the entrance to the Tower of
+Malakar, and the Amulet of Light itself emits an aura perceivable only by the pure of heart.
+Culturally, Eldoria is a realm of knights and sages: the locals tell legends of past heroes and
+sacred artifacts, providing the hero with clues and motivation. This rich context enhances the
+narrative and ensures that every player decision (such as trusting an old druid in the woods or
+honoring an ancient shrine along the way) is deeply rooted in the game world's internal logic.
