@@ -7,7 +7,7 @@ from langchain_community.llms import Ollama
 
 
 # STEP 1: Carica il documento
-loader = PyPDFLoader("Progetto-AI\QuestMaster – Documento Lore_ L’Amuleto della Luce.pdf")
+loader = PyPDFLoader("./QuestMaster – Documento Lore_ L’Amuleto della Luce.pdf")
 documents = loader.load()
 
 # STEP 2: Dividi il testo in chunk gestibili

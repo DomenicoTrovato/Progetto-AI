@@ -4,7 +4,7 @@ from langchain_community.llms import Ollama
 llm = Ollama(model="llama3:8b")
 
 # Inserisci qui il testo del Lore Document (oppure caricalo da un file come stringa)
-with open("C:/Users/domen/OneDrive/Desktop/The Amulet of Light – Lore Document.txt", "r", encoding="utf-8") as f:
+with open("./The Amulet of Light – Lore Document.txt", "r", encoding="utf-8") as f:
     lore_text = f.read()
 
 # Prompt da inviare al modello
