@@ -8,11 +8,13 @@ from langchain.agents import initialize_agent, Tool
 from langchain_core.tools import tool
 
 llm = Ollama(model="llama3:8b")
+domain_path = "./domain.pddl"
+problem_path = "./problem.pddl"
 
 def run_planner(domain_path, problem_path):
     print(f"\n  Esecuzione Fast Downward con i file: {domain_path}, {problem_path}")
     result = subprocess.run(
-        ["fast-downward.py", domain_path, problem_path, "--search", "astar(blind)"],
+        ["../fast-downward.py", domain_path, problem_path, "--search", "astar(blind)"],
         capture_output=True, text=True
     )
     output = result.stdout
@@ -29,7 +31,7 @@ def run_planner_tool(_: str) -> str:
     """Valida i file domain.pddl e problem.pddl con Fast Downward"""
     print("\n  Esecuzione Fast Downward...")
     result = subprocess.run(
-        ["fast-downward.py", "domain.pddl", "problem.pddl", "--search", "astar(blind)"],
+        ["../fast-downward.py", "domain.pddl", "problem.pddl", "--search", "astar(blind)"],
         capture_output=True, text=True
     )
     if "Solution found!" in result.stdout:
@@ -100,7 +102,7 @@ max_iterations = 5
 for i in range(max_iterations):
     result = agent.run("Esegui validazione e, se necessario, correggi il PDDL fino a che Fast Downward non trova un piano valido.")
     if "Piano valido" in result or "success" in result:
-        print("\n✅ Piano trovato! Processo completato.")
+        print("\n Piano trovato! Processo completato.")
         break
 else:
     print("\n Dopo 5 iterazioni non è stato trovato un piano valido.")
